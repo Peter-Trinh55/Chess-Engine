@@ -19,7 +19,7 @@ Before running the game, make sure you have:
 2. Press the green button called:
 
 ```text
-Code
+<> Code
 ```
 
 3. Press:
