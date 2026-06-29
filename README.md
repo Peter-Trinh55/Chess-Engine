@@ -1,5 +1,17 @@
 ## How to Run the Game
 
+### Pre-requisites
+
+Before running the game, make sure you have:
+
+* **Python installed**
+  Recommended version: **Python 3.12**
+
+* **Visual Studio Code installed**
+  This is used to open and run the chess engine project.
+
+---
+
 ### Windows Instructions
 
 1. Open **VS Code**.
