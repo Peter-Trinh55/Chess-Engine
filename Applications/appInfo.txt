@@ -1,0 +1,1 @@
+[{"appName":"Clash Royale","appPackage":"com.supercell.clashroyale","appVersion":"130300006"}]
