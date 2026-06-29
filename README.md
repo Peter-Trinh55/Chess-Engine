@@ -18,13 +18,11 @@ Before running the game, make sure you have:
 
 2. Press the green button called:
 
-3. Press:
-
 ```text
 Code
 ```
 
-4. Press:
+3. Press:
 
 ```text
 Download ZIP
