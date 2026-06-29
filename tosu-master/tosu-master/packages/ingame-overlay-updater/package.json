@@ -1,0 +1,11 @@
+{
+    "name": "@tosu/ingame-overlay-updater",
+    "private": "true",
+    "version": "0.0.1",
+    "main": "src/index.ts",
+    "scripts": {},
+    "dependencies": {
+        "tsprocess": "workspace:*",
+        "@tosu/common": "workspace:*"
+    }
+}

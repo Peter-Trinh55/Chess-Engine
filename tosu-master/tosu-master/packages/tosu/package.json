@@ -1,0 +1,39 @@
+{
+    "name": "tosu",
+    "version": "4.22.2",
+    "main": "dist/index.js",
+    "bin": "dist/index.js",
+    "scripts": {
+        "genver": "npx genversion src/_version.js",
+        "ts:run": "cross-env NODE_ENV=development ts-node --transpile-only -r tsconfig-paths/register --project tsconfig.json",
+        "ts:compile": "ncc build src/index.ts -o dist -m -d",
+        "run:dev": "pnpm run genver && pnpm run ts:run src/index.ts",
+        "compile:prepare-htmls": "cp -rf node_modules/@tosu/server/assets ./dist",
+        "compile:win": "pnpm run genver && pnpm run ts:compile && pnpm run compile:prepare-htmls && pkg --output dist/tosu.exe --debug --config pkg.win.json --compress brotli dist/index.js && pnpm run ts:run src/postBuild.ts",
+        "compile:linux": "pnpm run genver && pnpm run ts:compile && pnpm run compile:prepare-htmls && pkg --output dist/tosu --debug --config pkg.linux.json --compress brotli dist/index.js"
+    },
+    "dependencies": {
+        "@tosu/common": "workspace:*",
+        "@tosu/ingame-overlay-updater": "workspace:*",
+        "@tosuapp/lazer-calculator": "0.4.0-20260616.0",
+        "@tosu/server": "workspace:*",
+        "@tosu/updater": "workspace:*",
+        "osu-catch-stable": "^4.0.1",
+        "osu-classes": "^3.1.0",
+        "osu-mania-stable": "^5.0.1",
+        "osu-parsers": "^4.1.7",
+        "osu-standard-stable": "^5.0.1",
+        "osu-taiko-stable": "^5.0.1",
+        "resedit": "^2.0.3",
+        "semver": "^7.7.3",
+        "tsprocess": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/semver": "^7.7.1",
+        "@vercel/ncc": "^0.38.4",
+        "@yao-pkg/pkg": "^6.11.0",
+        "cross-env": "^7.0.3",
+        "genversion": "^3.2.0",
+        "ts-node": "^10.9.2"
+    }
+}
