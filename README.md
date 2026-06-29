@@ -10,7 +10,44 @@ Before running the game, make sure you have:
 * **Visual Studio Code installed**
   This is used to open and run the chess engine project.
 
----
+--- 
+
+### How to Download the Program
+
+1. Go to the GitHub page for the chess engine.
+
+2. Press the green button called:
+
+```text
+Code
+```
+
+3. Press:
+
+```text
+Download ZIP
+```
+
+4. Wait for the ZIP file to download.
+
+5. Go to your **Downloads** folder.
+
+6. Right-click the ZIP file and press:
+
+```text
+Extract All
+```
+
+7. Open the extracted folder.
+
+8. Make sure you can find the specific folder called:
+
+```text
+Peter Chess Engine v6.3.1 Copy
+```
+
+This is the folder you need to open in VS Code.
+
 
 ### Windows Instructions
 
@@ -19,7 +56,7 @@ Before running the game, make sure you have:
 2. Click:
 
 ```text
-File → Open Folder
+File → Open Folder or press Ctrl + O
 ```
 
 3. Select the folder called:
@@ -73,7 +110,7 @@ main.py
 2. Click:
 
 ```text
-File → Open Folder
+File → Open Folder press Command + O
 ```
 
 3. Select the folder called:
